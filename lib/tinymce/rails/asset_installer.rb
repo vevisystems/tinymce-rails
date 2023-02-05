@@ -55,7 +55,7 @@ module TinyMCE
           src = File.join(@target, src)
           dest = File.join(@target, dest)
           
-          yield src, dest if File.exists?(src)
+          yield src, dest if File.exist?(src)
         end
       end
     end
